@@ -18,6 +18,10 @@ app.get('/', (req, res) => {
   res.send('Backend funcionando');
 });
 
+// Ruta productos
+const productosRoutes = require('./routes/productos');
+app.use('/api/productos', productosRoutes);
+
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Servidor backend en puerto ${PORT}`);
