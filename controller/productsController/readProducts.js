@@ -1,7 +1,7 @@
-import Product from "../../models/ProductModel";
-import errorController from "../errorController";
+const Product = require("../../models/ProductModel");
+const errorController = require("../errorController");
 
-export default async function readProduct(req, res) {
+module.exports = async function readProduct(req, res) {
   const {id,name,filter,value} = req.query
   // creats a propper condition object if quety had filter key format
   var conObj = new Object();
