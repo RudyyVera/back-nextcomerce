@@ -40,3 +40,18 @@ yarn-error.log*
 **/public/sw.js.map
 **/public/workbox-*.js.map
 **/public/worker-*.js.map
+# Ignorar node_modules
+node_modules/
+# Ignorar archivos de frontend
+pages/
+components/
+public/
+styles/
+next.config.js
+postcss.config.js
+tailwind.config.js
+# Ignorar archivos de configuración de frontend
+bublic/
+shared/
+# Ignorar archivos de entorno
+.env
